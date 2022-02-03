@@ -1,3 +1,20 @@
+<?php
+$userloginid = $_SESSION["userid"] = $_GET['userlogid'];
+// echo $_SESSION["userid"];
+include("data_class.php");
+$u = new data;
+$u->setconnection();
+$u->userdetail($userloginid);
+$recordset = $u->userdetail($userloginid);
+foreach ($recordset as $row) {
+
+    $id = $row[0];
+    $name = $row[1];
+    $email = $row[2];
+    $pass = $row[3];
+    $type = $row[4];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,11 +56,12 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Welcome,</div>
-                <div class="text-2">Username</div>
+                <div class="text-2"><?php echo $name ?></div>
                 <a href="#account">My Account<br></a><br>
             </div>
         </div>
     </section>
+
     <!-- footer section start -->
     <footer>
         <span>Created By <a href="#">Group-04</a> | Rizvi College Of Engineering | <span class="far fa-copyright"> </span> 2022 All rights
