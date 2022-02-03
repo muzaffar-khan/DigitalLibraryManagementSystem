@@ -1,0 +1,192 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./image/bg.png);
+  font-family: inherit;
+}
+.container,
+.row,
+.h2 {
+  text-align: center;
+  font-family: inherit;
+}
+/* Login */
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-top: 3px solid #ff6768;
+  border-right: 3px solid #ff6768;
+  border-bottom: 3px solid #ff6768;
+  border-left: 3px solid #ff6768;
+}
+
+.login-form-1 {
+  padding: 5%;
+  border-radius: 30px;
+  background: #000000d0;
+  box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+  border-bottom: 3px solid #ff6768;
+  border-right: 3px solid #ff6768;
+}
+
+.login-form-1 h3 {
+  text-align: center;
+  color: #ff6768;
+}
+
+.login-form-2 {
+  padding: 5%;
+  border-radius: 30px;
+  background: #000000d0;
+  box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+  border-bottom: 3px solid #ff6768;
+  border-right: 3px solid #ff6768;
+}
+
+.login-form-2 h3 {
+  text-align: center;
+  color: #ff6768;
+}
+
+.login-container form {
+  padding: 10%;
+}
+
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-size: 105%;
+  font-family: inherit;
+  font-weight: 600;
+  border-bottom: 3px solid #ff6768;
+}
+.login-form-1 .btnSubmit:hover{
+  color: #000000;
+  background: #7c7c7c6b;
+  border-color: #ff6768;
+  transition: all 0.4s ease 0s;
+}
+
+.login-form-2 .btnSubmit {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-size: 105%;
+  font-family: inherit;
+  font-weight: 600;
+  border-bottom: 3px solid #ff6768;
+}
+.login-form-2 .btnSubmit:hover{
+  color: #000000;
+  background: #7c7c7c6b;
+  border-color: #ff6768;
+  transition: all 0.4s ease 0s;
+}
+
+.login-form-2 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-form-2 .ForgetPwd {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Dashboard Design */
+#useremail {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-family: inherit;
+  font-size: 105%;
+  width: 400px;
+  overflow: hidden;
+  font-size: 20px;
+  margin: 8px 0;
+  border-bottom: 3px solid #ff6768;
+}
+
+#userpassword {
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-family: inherit;
+  font-size: 105%;
+  width: 400px;
+
+  overflow: hidden;
+  font-size: 20px;
+  margin: 8px 0;
+  border-bottom: 3px solid #ff6768;
+}
+
+#adminemail {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-family: inherit;
+  font-size: 105%;
+  width: 400px;
+  overflow: hidden;
+  font-size: 20px;
+  margin: 8px 0;
+  border-bottom: 3px solid #ff6768;
+}
+
+#adminpassword {
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #ff6768;
+  font-family: inherit;
+  font-size: 105%;
+  width: 400px;
+
+  overflow: hidden;
+  font-size: 20px;
+  margin: 8px 0;
+  border-bottom: 3px solid #ff6768;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 10px 3px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+  color: rgb(0, 211, 248);
+}
