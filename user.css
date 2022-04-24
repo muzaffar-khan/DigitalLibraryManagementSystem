@@ -18,11 +18,11 @@ section {
 /* navbar styling */
 .navbar {
   background-color: crimson;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 5px 0;
   font-family: inherit;
   transition: all 0.3s ease;
 }
@@ -59,30 +59,6 @@ section {
   cursor: pointer;
   display: none;
 }
-.scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: crimson;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
 
 /* Home Content */
 .home {
@@ -105,7 +81,6 @@ section {
 .home .home-content .text-1 {
   font-size: 75px;
   font-weight: 600;
-  /* margin-left: -3px; */
 }
 .home .home-content .text-2 {
   font-size: 75px;
@@ -137,10 +112,11 @@ section {
 
 /* My Account */
 .account {
+  overflow-x: auto;
   display: flex;
   background: url("./image/bg.png") no-repeat center;
   height: 100vh;
-  color: rgb(252, 252, 252);
+  color: rgb(0, 0, 0);
   min-height: 500px;
   align-content: center;
   background-size: cover;
@@ -158,16 +134,164 @@ section {
 .account .user-account .text-1 {
   font-size: 70px;
   font-weight: 600;
-  /* margin-left: -3px; */
+  color: black;
+  background-color: wheat;
+  border-radius: 10rem;
+  border: black;
 }
 .account .user-account .text-2 {
   font-size: 40px;
 }
-table, th, td {
-  border: 1px solid rgb(255, 255, 255);
+
+table {
+  background-color: brown;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+  font-size: 20px;
 }
-th, td {
-  padding: 10px;
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+th,
+td {
+  color:azure;
+  text-align: left;
+  padding: 5px 20px
+}
+.left{
+  background-color:  rgb(255, 204, 0) ;
+}
+th {
+  color: black;
+  background-color: goldenrod;
+}
+
+td {
+  background-color: #f5c799;
+  color: black;
+}
+
+/* Book Request */
+.bookreq {
+  overflow-x: auto;
+  display: flex;
+  background: url("./image/bg.png") no-repeat center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  min-height: 500px;
+  align-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: inherit;
+}
+.bookreq .max-width {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.bookreq .max-width .row {
+  margin-right: 0;
+}
+.bookreq .requestbook .text-1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: black;
+  background-color: wheat;
+  border-radius: 10rem;
+  border: black;
+}
+.bookreq .requestbook button {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 30px;
+  margin-top: 0px;
+  font-weight: 200;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.bookreq .requestbook button:hover {
+  color: black;
+  background: none;
+}
+
+/* Return Book */
+.bookrep {
+  overflow-x: auto;
+  display: flex;
+  background: url("./image/bg.png") no-repeat center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  min-height: 500px;
+  align-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: inherit;
+}
+.bookrep .max-width {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.bookrep .max-width .row {
+  margin-right: 0;
+}
+.bookrep .bookreport .text-1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: black;
+  background-color: wheat;
+  border-radius: 10rem;
+  border: black;
+}
+.bookrep .bookreport button {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 15px;
+  padding: 12px 30px;
+  margin-top: 0px;
+  font-weight: 200;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.bookrep .bookreport button:hover {
+  color: black;
+  background: none;
+}
+
+/* Ebooks */
+.ebooks {
+  overflow-x: auto;
+  display: flex;
+  background: url("./image/bg.png") no-repeat center;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  min-height: 500px;
+  align-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: inherit;
+}
+.ebooks .max-width {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.left{
+  background-color:  rgb(255, 204, 0) ;
+}
+.ebooks a{
+  color:rgb(8, 8, 8);
+}
+.ebooks a:hover{
+  color:goldenrod;
 }
 /* Footer */
 footer {
